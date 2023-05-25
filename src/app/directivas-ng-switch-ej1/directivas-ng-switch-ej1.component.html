@@ -1,0 +1,22 @@
+<h1>Ejercicio 1 Directivas- *ngSwitch</h1>
+<h4>Practicar como se hace el *ngSwitch</h4>
+<ul>
+    <li>1-Casado</li>
+    <li>2-Divorciado</li>
+    <li>3-Soltero</li>
+    <li>4-Viudo</li>
+</ul>
+<p>
+    <label for="estado">Introduce el número correspondiente a cada estado civil:  </label>
+    <input type="text" size="5" [(ngModel)]="estadoCivil"/>
+</p>
+<div [ngSwitch]="estadoCivil">
+    <div *ngSwitchCase="1">Casado</div>
+    <div *ngSwitchCase="2">Divorciado</div>
+    <div *ngSwitchCase="3">Soltero</div>
+    <div *ngSwitchCase="4">Viudo</div>
+    <div *ngSwitchDefault>Valor inválido</div>
+</div>
+
+<!--Para elegir el estado civil, es cambiando la inicialización de la variable en el .ts.-->
+

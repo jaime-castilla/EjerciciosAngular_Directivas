@@ -1,0 +1,10 @@
+<h1>Ejercicio 2 Directivas- *ngFor</h1>
+<h4>Practicar como se hace el *ngFor poniendo los resultados en una tabla.</h4>
+<table border="2">
+    <tr>
+        <th>Tipos de formaciones</th>
+    </tr>
+    <tr *ngFor="let elemento, of tiposFormaciones">    
+        <td>-{{elemento}}</td>
+    </tr>
+</table>

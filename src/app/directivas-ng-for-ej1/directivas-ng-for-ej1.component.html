@@ -1,3 +1,8 @@
 <h1>Ejercicio 1 Directivas *ngFor</h1>
 <h4>Practicar como se hace el *ngFor.</h4>
+<div *ngFor="let elemento of tipoVivienda">
+    <p>--{{elemento}} es un tipo de vivienda.</p>
+</div>
 
+<!--EXPLICACIÓN: "elemento" es cada uno de los elementos que he metido en el array del .ts.
+"tipoVivienda" es el nombre de la variable-->

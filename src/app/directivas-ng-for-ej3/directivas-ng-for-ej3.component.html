@@ -1,0 +1,11 @@
+<h1>Ejercicio 3 Directivas- *ngFor</h1>
+<h4>Practicar como se hace el *ngFor con URLs de imágenes.</h4>
+<table border="1">
+    <tr>
+        <th>Imágenes</th>
+    </tr>
+    <tr *ngFor="let elemento of imagenes; let i = index">
+        <td><img src={{elemento}}></td>
+        <td>{{nombre [i]}}</td>
+    </tr>
+</table>

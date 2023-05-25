@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class DirectivasNgForEj1Component {
 
+  tipoVivienda: string[] = ["Chalet individual" , "Chalet pareado" , "Piso" , "Ático"]
+
 }
