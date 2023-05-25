@@ -1,0 +1,9 @@
+<h1>Ejercicio 3 Directivas- *ngIf-else</h1>
+<h4>Practicar como se hace el *ngIf-else</h4>
+<div *ngIf="mayorEdad; else menorEdad">
+    <p>Usuario MAYOR de edad</p>
+</div>
+<ng-template #menorEdad>
+    <p>Usuario MENOR de edad</p>
+</ng-template>
+<button (click)="comprobar()">Comprobar</button>

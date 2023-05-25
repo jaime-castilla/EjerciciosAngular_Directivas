@@ -1,0 +1,12 @@
+<h1>Ejercicio 2 Directivas- *ngIf-else </h1>
+<h4>Practicar como se hace el *ngIf-else</h4>
+<div *ngIf="registrado; else noRegistrado">
+    <p>Usuario registrado</p>
+</div>
+<ng-template #noRegistrado>           <!-- El ng-template es como el else en un if normal -->
+    <p>Usuario NO registrado</p>
+</ng-template>
+<button (click)="comprobar()">Comprobar</button>
+
+<!--RESUMEN DEL EJERCICIO: Lo que hace es decir si está registrado que lance el mensaje "Usuario registrado"
+y si no está resgistrado que lance el mensaje "Usuario NO registrado"-->
